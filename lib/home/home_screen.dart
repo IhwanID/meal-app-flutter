@@ -71,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
           elevation: 0,
           backgroundColor: Colors.white,
         ),
-        body: SingleChildScrollView(
+        body: categories.isEmpty ? const Center(child: CircularProgressIndicator(color: Colors.amber,),) : SingleChildScrollView(
           child: Column(
             children: [
               SizedBox(
